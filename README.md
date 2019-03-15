@@ -21,7 +21,7 @@ You'll need to bring
 For the workshop, you'll need the following:
 * [Node.js: use the current LTS - download and installation](https://nodejs.org)
 * npm: will be installed with Node.js
-* [Git](https://git-scm.com)
+* [Git](https://git-scm.com) and your favorite client e.g. Sourcetree or GitHub Desktop
 * Code editor supporting Angular. E.g. VS Code, WebStorm, IntelliJ IDEA ...
 
 ### Recommanded extensions for VS Code
@@ -37,4 +37,4 @@ In order to check if everything is installed properly, do the following:
 2. Run `npm -v` in a terminal . This should print the npm version number
 
 ## During the workshop
-During the worshop I'll use VS Code and Chrome Browser. If you're familiar with an other browser / editor, feel free to use it.
+During the workshop I'll use VS Code and Chrome Browser. If you're familiar with an other browser / editor, feel free to use it.
