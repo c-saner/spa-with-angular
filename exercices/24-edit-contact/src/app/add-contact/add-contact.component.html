@@ -1,0 +1,40 @@
+<mat-card class="card overview-card">
+  <form [formGroup]="addContactForm" (ngSubmit)="onSubmit()">
+    <mat-card-title class="center-text">
+      <h3>Add contact</h3>
+    </mat-card-title>
+    <mat-card-content>
+      <mat-form-field class="full-width">
+        <input formControlName="firstName" matInput placeholder="Firstname">
+        <mat-error *ngIf="hasFieldRequiredError('firstName')">
+          Firstname is <strong>required</strong>
+        </mat-error>
+      </mat-form-field>
+      <mat-form-field class="full-width">
+        <input formControlName="lastName" matInput placeholder="Lastname">
+        <mat-error *ngIf="hasFieldRequiredError('lastName')">
+          Lastname is <strong>required</strong>
+        </mat-error>
+      </mat-form-field>
+      <mat-form-field class="full-width">
+        <input formControlName="phone" matInput placeholder="Phone">
+        <mat-error *ngIf="hasFieldRequiredError('phone')">
+          Phone is <strong>required</strong>
+        </mat-error>
+      </mat-form-field>
+      <mat-form-field class="full-width">
+        <input formControlName="email" matInput placeholder="Email">
+        <mat-error *ngIf="hasFieldRequiredError('email')">
+          Email is <strong>required</strong>
+        </mat-error>
+        <mat-error *ngIf="addContactForm.get('email').hasError('email')">
+            Please enter a <strong>valid</strong> email address
+          </mat-error>
+      </mat-form-field>
+    </mat-card-content>
+    <mat-card-actions>
+      <button type="submit" mat-raised-button color="primary" [disabled]="addContactForm.invalid">Submit</button>
+      <button type="button" mat-raised-button color="primary" (click)="cancel()">Cancel</button>
+    </mat-card-actions>
+  </form>
+</mat-card>
