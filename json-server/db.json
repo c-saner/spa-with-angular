@@ -1,0 +1,18 @@
+{
+  "contacts": [
+    {
+      "id": 1,
+      "firstName": "John",
+      "lastName": "Doe",
+      "phone": "111 111 1111",
+      "email": "john@doe.ch"
+    },
+    {
+      "id": 2,
+      "firstName": "Jeanne",
+      "lastName": "Doe",
+      "phone": "2222222222",
+      "email": "jeanne@doe.ch"
+    }
+  ]
+}
