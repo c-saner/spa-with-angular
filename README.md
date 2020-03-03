@@ -1,3 +1,6 @@
+# DEPRECATED
+This is workshop is not updated to the latest Angular version.
+
 # An introduction to SPA - Angular for Plain Old Java Engineers
 This is a two-day workshop designed for Java developers who wants to learn web development with Angular.
 
